@@ -16,3 +16,4 @@
 /workspaces/codespaces-blank/MechanicsLibrary.Sim/obj/Debug/net9.0/MechanicsLibrary.Sim.pdb
 /workspaces/codespaces-blank/MechanicsLibrary.Sim/obj/Debug/net9.0/MechanicsLibrary.Sim.genruntimeconfig.cache
 /workspaces/codespaces-blank/MechanicsLibrary.Sim/obj/Debug/net9.0/ref/MechanicsLibrary.Sim.dll
+/workspaces/codespaces-blank/MechanicsLibrary.Sim/obj/Debug/net9.0/MechanicsLibrary.Sim.sourcelink.json

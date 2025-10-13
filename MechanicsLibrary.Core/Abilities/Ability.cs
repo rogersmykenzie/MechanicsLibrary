@@ -5,14 +5,8 @@ namespace MechanicsLibrary.Core.Abilities;
 
 public class Ability : IAbility
 {
-    public string Name { get; }
-    public List<IEffect> Effects { get; }
-
-    public Ability(string name, List<IEffect> effects)
-    {
-        Name = name;
-        Effects = effects;
-    }
+    public string Name { get; init; } = "";
+    public List<IEffect> Effects { get; init; } = new();
 
     public void Execute(AbilityContext ctx)
     {

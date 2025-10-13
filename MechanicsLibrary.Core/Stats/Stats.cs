@@ -15,3 +15,11 @@ public sealed class StatCollection
         Strength = strength;
     }
 }
+
+public enum StatType
+{
+    Health,
+    Armor,
+    Grit,
+    Strength,
+}

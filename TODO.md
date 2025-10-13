@@ -1,0 +1,3 @@
+Targeting requirements
+Cost requirements
+accuracy

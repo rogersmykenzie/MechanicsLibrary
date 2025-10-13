@@ -9,3 +9,4 @@
 /workspaces/codespaces-blank/MechanicsLibrary.Core/obj/Debug/net9.0/refint/MechanicsLibrary.Core.dll
 /workspaces/codespaces-blank/MechanicsLibrary.Core/obj/Debug/net9.0/MechanicsLibrary.Core.pdb
 /workspaces/codespaces-blank/MechanicsLibrary.Core/obj/Debug/net9.0/ref/MechanicsLibrary.Core.dll
+/workspaces/codespaces-blank/MechanicsLibrary.Core/obj/Debug/net9.0/MechanicsLibrary.Core.sourcelink.json

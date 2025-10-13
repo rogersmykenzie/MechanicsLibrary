@@ -8,3 +8,4 @@ Type Shield = Flat type damage reduction
 
 ## Offense
 1 point of strength = 1% increased physical damage.
+1 point of 
