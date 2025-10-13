@@ -1,0 +1,22 @@
+{
+  "name": "C# Core Mechanics",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.vscode-dotnet-runtime"
+      ],
+      "settings": {
+        "dotnet.defaultSolution": "GameCore.sln"
+      }
+    }
+  },
+  "postCreateCommand": "dotnet --info && dotnet restore",
+  "remoteUser": "vscode"
+}
