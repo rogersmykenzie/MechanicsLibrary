@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "name": "Pig",
+        "stats": {
+            "health": 10,
+            "armor": 10,
+            "grit": 0,
+            "strength": 10
+        },
+        "abilities": [
+            "ATTACK"
+        ]
+    }
+]

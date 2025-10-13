@@ -1,11 +1,12 @@
+using MechanicsLibrary.Core.Stats;
+
 namespace MechanicsLibrary.Core.Character;
 
 public class KillableCharacter : Character
 {
-    private int _health { get; set; }
-
-    public KillableCharacter(int health)
+    public StatCollection Stats;
+    public KillableCharacter(StatCollection stats)
     {
-        _health = health;
+        Stats = stats;
     }
 }
