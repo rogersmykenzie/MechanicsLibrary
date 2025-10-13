@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "MechanicsLibrary.Sim/1.0.0": {
+        "dependencies": {
+          "MechanicsLibrary.Core": "1.0.0"
+        },
+        "runtime": {
+          "MechanicsLibrary.Sim.dll": {}
+        }
+      },
+      "MechanicsLibrary.Core/1.0.0": {
+        "runtime": {
+          "MechanicsLibrary.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MechanicsLibrary.Sim/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MechanicsLibrary.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

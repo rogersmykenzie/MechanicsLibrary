@@ -13,7 +13,7 @@
         "ms-dotnettools.vscode-dotnet-runtime"
       ],
       "settings": {
-        "dotnet.defaultSolution": "GameCore.sln"
+        "dotnet.defaultSolution": "MechanicsLibrary.sln"
       }
     }
   },
