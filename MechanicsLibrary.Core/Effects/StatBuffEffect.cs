@@ -21,23 +21,27 @@ public class StatChangeEffect : IEffect
             Console.WriteLine("Casting " + ID);
             Console.WriteLine("Changing " + Type + " By " + Magnitude);
         }
-        switch(Type)
+        switch (Type)
         {
             case StatType.Health:
                 ctx.Reciever.Stats.Health += Magnitude;
-                if (_isDebug) Console.WriteLine("Reciever Health at " + ctx.Reciever.Stats.Health);
+                if (_isDebug)
+                    Console.WriteLine("Reciever Health at " + ctx.Reciever.Stats.Health);
                 break;
             case StatType.Strength:
                 ctx.Reciever.Stats.Strength += Magnitude;
-                if (_isDebug) Console.WriteLine("Reciever Strength at " + ctx.Reciever.Stats.Strength);
+                if (_isDebug)
+                    Console.WriteLine("Reciever Strength at " + ctx.Reciever.Stats.Strength);
                 break;
             case StatType.Armor:
                 ctx.Reciever.Stats.Armor += Magnitude;
-                if (_isDebug) Console.WriteLine("Reciever Armor at " + ctx.Reciever.Stats.Armor);
+                if (_isDebug)
+                    Console.WriteLine("Reciever Armor at " + ctx.Reciever.Stats.Armor);
                 break;
             case StatType.Grit:
                 ctx.Reciever.Stats.Grit += Magnitude;
-                if (_isDebug) Console.WriteLine("Reciever Grit at " + ctx.Reciever.Stats.Grit);
+                if (_isDebug)
+                    Console.WriteLine("Reciever Grit at " + ctx.Reciever.Stats.Grit);
                 break;
         }
     }

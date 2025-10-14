@@ -5,6 +5,6 @@ namespace MechanicsLibrary.Core.Character;
 
 public class Hero : KillableCharacter
 {
-    public List<Ability> Abilities { get; init; } = new();
-    public Hero() : base(new StatCollection()) { }
+    public Hero()
+        : base(new StatCollection(), new List<Ability>()) { }
 }

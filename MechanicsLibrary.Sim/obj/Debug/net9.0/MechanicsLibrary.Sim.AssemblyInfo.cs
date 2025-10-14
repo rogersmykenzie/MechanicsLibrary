@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MechanicsLibrary.Sim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b0a449d3c35b381d4953eebc95684877eeaecbd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1ed6546d488df6439f414f51eeea2084d3cbd00")]
 [assembly: System.Reflection.AssemblyProductAttribute("MechanicsLibrary.Sim")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MechanicsLibrary.Sim")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

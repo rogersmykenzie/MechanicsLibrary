@@ -19,6 +19,7 @@ public class PureDamageEffect : IEffect
             Console.WriteLine("Dealing " + Magnitude + " Pure Damage");
         }
         ctx.Reciever.Stats.Health -= Magnitude;
-        if (_isDebug) Console.WriteLine("Receiver Health Lowered to " + ctx.Reciever.Stats.Health);
+        if (_isDebug)
+            Console.WriteLine("Receiver Health Lowered to " + ctx.Reciever.Stats.Health);
     }
 }

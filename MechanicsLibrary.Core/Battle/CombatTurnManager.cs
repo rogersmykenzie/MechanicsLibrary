@@ -4,7 +4,7 @@ namespace MechanicsLibrary.Core.Battle;
 
 public class CombatTurnManager
 {
-    public Queue<KillableCharacter> CombatantQueue { get; } = new Queue<KillableCharacter>();
+    public Queue<KillableCharacter> CombatantQueue { get; set; } = new Queue<KillableCharacter>();
 
     public CombatTurnManager(List<KillableCharacter> combatants)
     {
@@ -12,7 +12,7 @@ public class CombatTurnManager
         foreach (KillableCharacter c in combatants)
         {
             CombatantQueue.Enqueue(c);
-            Console.WriteLine(c.Name + " has " + c.Stats.Speed + " speed");
+            // Console.WriteLine(c.Name + " has " + c.Stats.Speed + " speed");
         }
     }
 
@@ -24,9 +24,25 @@ public class CombatTurnManager
     // Steps to next turn and returns the next combatant
     public KillableCharacter NextTurn()
     {
+        _cleanUpDead();
         KillableCharacter temp = CombatantQueue.Dequeue();
         CombatantQueue.Enqueue(temp);
         return CombatantQueue.Peek();
+    }
+
+    private void _cleanUpDead()
+    {
+        Queue<KillableCharacter> newQueue = new Queue<KillableCharacter>();
+        int count = CombatantQueue.Count;
+        for (int i = 0; i < count; i++)
+        {
+            KillableCharacter curr = CombatantQueue.Dequeue();
+            if (curr.Stats.Health > 0)
+            {
+                newQueue.Enqueue(curr);
+            }
+        }
+        CombatantQueue = newQueue;
     }
 
     public void Debug()

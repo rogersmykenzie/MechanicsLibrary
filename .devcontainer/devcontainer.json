@@ -10,10 +10,17 @@
     "vscode": {
       "extensions": [
         "ms-dotnettools.csharp",
-        "ms-dotnettools.vscode-dotnet-runtime"
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "csharpier.csharpier-vscode",
+        "ms-dotnettools.csdevkit"
       ],
       "settings": {
-        "dotnet.defaultSolution": "MechanicsLibrary.sln"
+        "dotnet.defaultSolution": "MechanicsLibrary.sln",
+        "editor.formatOnSave": true,
+        "[csharp]": {
+          "editor.defaultFormatter": "csharpier.csharpier-vscode"
+        },
+        "csharpier.printWidth": 120
       }
     }
   },
