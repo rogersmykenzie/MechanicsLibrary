@@ -7,6 +7,7 @@ public class Ability : IAbility
 {
     public string Name { get; init; } = "";
     public List<IEffect> Effects { get; init; } = new();
+    public required int Range { get; init; }
 
     public void Execute(AbilityContext ctx)
     {

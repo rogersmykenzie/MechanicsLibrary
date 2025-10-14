@@ -9,7 +9,7 @@ public class StatChangeEffect : IEffect
     public required StatType Type { get; init; }
     private bool _isDebug;
 
-    public StatChangeEffect(bool isDebug)
+    public StatChangeEffect(bool isDebug = false)
     {
         _isDebug = isDebug;
     }

@@ -5,6 +5,11 @@ namespace MechanicsLibrary.Core.Character;
 
 public class Enemy : KillableCharacter
 {
-    public List<Ability> Abilities { get; init; } = new();
-    public Enemy() : base(new StatCollection()) {}
+    public required List<Ability> Abilities { get; init; }
+    public Enemy() : base(new StatCollection()) { }
+    
+    public void Debug()
+    {
+        Console.WriteLine("Health at " + Stats.Health);
+    }
 }
