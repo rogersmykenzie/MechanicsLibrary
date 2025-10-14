@@ -13,7 +13,6 @@ public class BasicAI : IAI
         Ability? heal = ctx.UpNext.Abilities.Find(e => e.Tags.Contains(Tag.Heal));
         if (heal != null && _isLowHealth(ctx))
         {
-            Console.WriteLine("Using " + heal.Name);
             heal.Execute(
                 new AbilityContext
                 {
@@ -29,7 +28,6 @@ public class BasicAI : IAI
         if (attack != null && target != null)
         {
             // will not aoe - add support later
-            Console.WriteLine("Using " + attack.Name);
             attack.Execute(
                 new AbilityContext
                 {

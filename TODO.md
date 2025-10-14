@@ -2,4 +2,8 @@
 - [ ] Battle Manager
 - [X] Team Builder
 - [ ] Unit Tests
+    - Started
 - [ ] JSON Parser
+- [ ] Experience
+- [X] Status Effects
+- [ ] Items

@@ -28,6 +28,14 @@ public static class AbilityCollection
         Tags = [],
     };
 
+    public static Ability IDLE = new Ability
+    {
+        Name = "IDLE",
+        Effects = new List<IEffect> { new DamageEffect() { Magnitude = 0 } },
+        Range = 0,
+        Tags = [],
+    };
+
     // Buffs
     public static Ability DEFEND = new Ability
     {
@@ -48,5 +56,14 @@ public static class AbilityCollection
         },
         Range = 3,
         Tags = [Tag.Heal],
+    };
+
+    // Magic
+    public static Ability FIREBALL = new Ability
+    {
+        Name = "FIREBALL",
+        Effects = new List<IEffect> { new FireEffect { Magnitude = 8 } },
+        Range = 5,
+        Tags = [Tag.Offensive, Tag.Fire, Tag.Magic],
     };
 }

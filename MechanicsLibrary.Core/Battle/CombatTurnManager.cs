@@ -27,6 +27,7 @@ public class CombatTurnManager
         _cleanUpDead();
         KillableCharacter temp = CombatantQueue.Dequeue();
         CombatantQueue.Enqueue(temp);
+        CombatantQueue.Peek().ActiveModifiers.ForEach(m => m.OnTurnStart());
         return CombatantQueue.Peek();
     }
 

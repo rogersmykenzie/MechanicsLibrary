@@ -4,4 +4,6 @@ public enum Tag
 {
     Heal,
     Offensive,
+    Fire,
+    Magic,
 }

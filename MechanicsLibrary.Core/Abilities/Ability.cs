@@ -10,13 +10,13 @@ public class Ability : IAbility
     public required Tag[] Tags { get; init; }
     public required int Range { get; init; } // Remove Range
 
-    public void Execute(AbilityContext ctx)
+    public virtual void Execute(AbilityContext ctx)
     {
         foreach (KillableCharacter target in ctx.Targets)
         {
             foreach (IEffect effect in Effects)
             {
-                effect.Apply(new EffectContext(ctx.User, target));
+                effect.Apply(new EffectContext { Originator = ctx.User, Reciever = target });
             }
         }
     }

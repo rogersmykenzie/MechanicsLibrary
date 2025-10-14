@@ -7,6 +7,7 @@ public sealed class StatCollection
     public int Armor { get; set; }
     public int Grit { get; set; }
     public int Strength { get; set; }
+    public int Magic { get; set; }
     public int Speed { get; set; }
 }
 
@@ -60,6 +61,28 @@ public static class StatConfigs
         Armor = 20,
         Grit = 0,
         Strength = 10,
-        Speed = 25
+        Speed = 25,
+    };
+
+    public static StatCollection FireMage = new StatCollection
+    {
+        Health = 15,
+        MaxHealth = 15,
+        Armor = 5,
+        Grit = 1,
+        Magic = 30,
+        Speed = 30,
+    };
+
+    public static StatCollection LowHealth = new StatCollection { Health = 2, MaxHealth = 10 };
+
+    public static StatCollection TargetDummy = new StatCollection
+    {
+        Health = 10000,
+        MaxHealth = 10000,
+        Armor = 0,
+        Grit = 0,
+        Strength = 0,
+        Speed = 0,
     };
 }

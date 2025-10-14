@@ -10,12 +10,7 @@ public interface IEffect
 
 public sealed class EffectContext
 {
-    public KillableCharacter Originator { get; }
-    public KillableCharacter Reciever { get; }
-
-    public EffectContext(KillableCharacter originator, KillableCharacter reciever)
-    {
-        Originator = originator;
-        Reciever = reciever;
-    }
+    public required KillableCharacter Originator { get; init; }
+    public required KillableCharacter Reciever { get; init; }
+    public Random RNG { get; init; } = new Random();
 }
