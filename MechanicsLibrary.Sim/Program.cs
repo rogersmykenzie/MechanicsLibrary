@@ -5,5 +5,8 @@ using MechanicsLibrary.Core.Character;
 using MechanicsLibrary.Core.Stats;
 using MechanicsLibrary.Sim.Demos;
 
-var demo = new TurnBattleDemo();
-demo.Run();
+// var demo = new TurnBattleDemo();
+// demo.Run();
+
+var builderDemo = new TeamBuilderDemo();
+builderDemo.Run();

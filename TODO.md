@@ -1,3 +1,5 @@
-Targeting requirements
-Cost requirements
-accuracy
+- [ ] Targeting Requirements
+- [ ] Battle Manager
+- [X] Team Builder
+- [ ] Unit Tests
+- [ ] JSON Parser
