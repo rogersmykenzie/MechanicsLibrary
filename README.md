@@ -22,3 +22,10 @@ If you spend too much time focusing on one pod, indicators that your other pods 
 Notifications of other units on the battlefield
 Potentially program pods so they have instructions of what to do when you are not micro managing
 Focus is more emphasized on turn based combat than strategically moving your troops.
+
+# Building Teams
+Idea would be that you get to build teams of units that you like.
+There would be lots of missions with one team, but then also missions with maybe two or three teams that you have to manage.
+Throughout the game you will be able to recruit or train new units - the units that you get and their starting stats/abilities will be dictated by things like your level, research tree, the kind of units you are missing, etc.
+  For this we could have a builder class that exposes different methods to plug in this data and will produce you a unit.
+    E.G. I instantiate the builder class, call withLevel, withResearch, withCurrentUnits, etc and then i can call buildUnit and it will weight everything properly to generate a new unit

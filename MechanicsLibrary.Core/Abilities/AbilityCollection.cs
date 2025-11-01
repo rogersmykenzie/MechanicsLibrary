@@ -1,5 +1,6 @@
 using MechanicsLibrary.Core.Effects;
 using MechanicsLibrary.Core.Stats;
+using MechanicsLibrary.Core.Status;
 
 namespace MechanicsLibrary.Core.Abilities;
 
@@ -56,6 +57,20 @@ public static class AbilityCollection
         },
         Range = 3,
         Tags = [Tag.Heal],
+    };
+
+    // Heals
+    // heals a large amount but applies burn to self
+    public static Ability INFERNAL_GAMBIT = new Ability
+    {
+        Name = "INFERNAL_GAMBIT",
+        Effects = new List<IEffect>
+        {
+            new BurnEffect { Magnitude = 5 },
+            new StatChangeEffect() { Type = StatType.Health, Magnitude = 15 },
+        },
+        Range = 3,
+        Tags = [Tag.Heal, Tag.Fire],
     };
 
     // Magic

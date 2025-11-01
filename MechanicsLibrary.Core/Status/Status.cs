@@ -5,7 +5,7 @@ namespace MechanicsLibrary.Core.Status;
 
 public interface IStatus
 {
-    public StatusContext Ctx { get; set; }
+    public StatusContext Ctx { get; init; }
     public void OnTurnStart();
 }
 

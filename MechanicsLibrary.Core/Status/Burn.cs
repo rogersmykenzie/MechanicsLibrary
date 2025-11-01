@@ -8,7 +8,7 @@ namespace MechanicsLibrary.Core.Status;
 */
 public class Burn : IStatus
 {
-    public required StatusContext Ctx { get; set; }
+    public required StatusContext Ctx { get; init; }
     int turns = 0;
 
     public void OnTurnStart()
